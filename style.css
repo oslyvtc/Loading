@@ -1,0 +1,169 @@
+/*////// Pure CSS ////////*/
+
+/*.main {
+	position: absolute;
+	top: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.wrapper {
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+
+.half-left {
+	left: 0;
+	background-color: green;
+	border-radius: 100%;
+	clip: rect(0px,50px,100px,0px);
+	z-index: 5;
+	animation: round 4s linear forwards;
+}
+
+@keyframes round {
+	from {transform: rotate(0deg);}
+	to {transform: rotate(180deg);}
+}
+
+.half-left-hide {
+	left: 0;
+	clip: rect(0px,50px,100px,0px);
+	background-color: white;
+	z-index: 6;
+}
+
+.half-right {
+	right: 0;
+	background-color: green;
+	border-radius: 100%;
+	clip: rect(0px,100px,100px,50px);
+	animation: round 4s linear 4s forwards, show 0s 4s forwards;
+	z-index: 3;
+}
+
+@keyframes show {
+	from {z-index: 3;}
+	to {z-index: 7;}
+}
+
+.half-right-hide {
+	right: 0;
+	clip: rect(0px,100px,100px,50px);
+	background-color: white;
+	z-index: 4;
+}
+
+.white {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: white;
+	width: 75px;
+	height: 75px;
+	border-radius: 100%;
+	z-index: 999;
+}
+
+.numbers {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 30px;
+	height: 20px;
+	overflow: hidden;
+	z-index: 1000;
+}
+
+.number-in {
+	animation: per 8s linear forwards;
+}
+
+@keyframes per {
+	from {margin-top: 0}
+	to {margin-top:-1692px;}
+}
+*/
+
+ /*////// END Pure CSS ////////*/
+
+/*//// CSS with JavaScript /////*/
+
+.main {
+	position: absolute;
+	top: 0;
+	width: 100px;
+	height: 100px;
+}
+
+.wrapper {
+	left: 0;
+	bottom: 0;
+	right: 0;
+	margin: auto;
+}
+
+.half-left {
+	left: 0;
+	background-color: green;
+	border-radius: 100%;
+	clip: rect(0px,50px,100px,0px);
+	z-index: 5;
+}
+
+.half-left-hide {
+	left: 0;
+	clip: rect(0px,50px,100px,0px);
+	background-color: white;
+	z-index: 6;
+}
+
+.half-right {
+	right: 0;
+	background-color: green;
+	border-radius: 100%;
+	clip: rect(0px,100px,100px,50px);
+	z-index: 3;
+}
+
+.half-right-hide {
+	right: 0;
+	clip: rect(0px,100px,100px,50px);
+	background-color: white;
+	z-index: 4;
+}
+
+.white {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background-color: white;
+	width: 75px;
+	height: 75px;
+	border-radius: 100%;
+	z-index: 999;
+}
+
+.numbers {
+	position: absolute;
+	display: inline-block;
+	top: 0;
+  left: 35px;
+	bottom: 0;
+	margin: auto;
+	height: 20px;
+	overflow: hidden;
+	z-index: 1000;
+}
